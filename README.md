@@ -1,5 +1,7 @@
 # T-Dongle-S3 Diagnostic & Pentest Tool
 
+![T-Dongle-S3](t-dongle.png)
+
 A menu-driven diagnostic and security-testing console for the
 **LilyGo T-Dongle-S3** (ESP32-S3). Intended for authorised penetration
 testing and network troubleshooting.
