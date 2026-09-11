@@ -1,0 +1,17 @@
+REM Windows: open a console and dump network configuration to a file on the
+REM target's desktop. Useful as a quick host network-diagnostic capture.
+DEFAULT_DELAY 50
+DELAY 500
+GUI r
+DELAY 400
+STRING cmd
+ENTER
+DELAY 800
+STRING ipconfig /all > "%USERPROFILE%\Desktop\ipconfig.txt" 2>&1
+ENTER
+DELAY 300
+STRING route print >> "%USERPROFILE%\Desktop\ipconfig.txt" 2>&1
+ENTER
+DELAY 300
+STRING exit
+ENTER

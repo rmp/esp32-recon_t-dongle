@@ -1,0 +1,17 @@
+REM Example DuckyScript payload for the T-Dongle-S3 diagnostic tool.
+REM Copy the files in this folder to a "/payloads" directory on the microSD
+REM card, then run them from  USB HID > Payloads (SD).
+REM
+REM Supported: REM, DELAY, DEFAULT_DELAY, STRING, STRINGLN, REPEAT, and key
+REM names / combos (GUI, CTRL, ALT, SHIFT, ENTER, TAB, ESC, F1-F12, arrows...).
+REM
+REM This demo opens the Windows Run box and types a harmless banner.
+DEFAULT_DELAY 40
+DELAY 500
+GUI r
+DELAY 400
+STRING notepad
+ENTER
+DELAY 900
+STRINGLN T-Dongle-S3 HID self-test.
+STRINGLN Authorized security testing only.
